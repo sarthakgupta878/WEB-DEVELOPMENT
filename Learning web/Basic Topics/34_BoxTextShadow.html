@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        /* box-shadow: offsets offsety colour; */
+        /* box-shadow: offsets offsety blur radius spread radius colour; */
+
+        margin: 23px 12px;
+        background-color: burlywood;
+        /* box-shadow: 10px 13px rgba(red, green, blue, alpha); */
+        /* box-shadow: -10px -13px chartreuse; */
+        /* box-shadow: 7px 5px 10px chartreuse;  */
+        /* box-shadow: -7px -5px 10px 34px chartreuse; */
+        /* box-shadow: inset 3px 5px green; */
+        box-shadow:  3px 5px green,4px 6px red;
+
+    }
+    .card h2{
+        /* text-shadow: 3px 4px white; */
+        text-shadow: 3px 2px 6px white;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam eveniet neque perferendis facilis nihil doloremque aut deserunt. Animi optio corporis dolorum reiciendis eveniet soluta, recusandae aliquid alias quia repudiandae tempora nobis unde et.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam perspiciatis voluptatibus explicabo quod similique unde, blanditiis dignissimos labore voluptatem amet et debitis obcaecati eveniet. Excepturi perspiciatis reprehenderit nam ratione voluptatem quasi fugit veritatis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>  Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum eos doloribus dolore, esse ea dicta quia reprehenderit vitae delectus tenetur cumque temporibus sapiente labore nulla cum corrupti veritatis ab id? Labore, obcaecati perspiciatis?</p>
+        </div>
+    </div>
+</body>
+</html>

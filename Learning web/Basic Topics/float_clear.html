@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        *{
+            /* background-color: rgb(204, 241, 192); */
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 2px solid brown;
+            margin: 33px auto;
+             background-color: chartreuse;
+
+        }
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(226, 128, 128);
+
+        }
+        #fruit{
+            float: right ;
+            width: 48%;
+        }
+        #computer{
+            float: right ;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left ; 
+            clear :right ;*/
+            clear: both;
+            /* koi float left allowed ni ha */
+            width: 100%;
+        }
+        p,h3{
+            /* text-align: right; */
+            text-align: justify;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item" >
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus velit facere iusto cumque aut nam atque doloribus! Porro mollitia, rerum similique quis hic fugiat eaque dolorum sapiente suscipit nesciunt penam corporis ipsam veniam quia excepturi? Provident soluta voluptatum modi, perferendis quibusdam pariatur optio eveniet, mollitore voluptatum? Laudantium ipsam omnis adipisci impedit vero aliquid soluta explicabo sequi, ducimus vitae aliquam quasi laboriosam? Temporibus nemo porro assumenda alias in illum, modi dolorem excepturi iusto nobis cupiditate eius, itaque minus incidunt recusandae expedita, quia voluptatum. </p>
+        </div>
+        <div id="computer" class="item" >
+            <h3>computer</h3>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus velit facere iusto cumque aut nam atque doloribus! Porro mollitia, rerum similique quis hic fugiat eaque dolorum sapiente suscipit nesciunt perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque architecto dignissimos commodi modi ipsum exercitationem ea eaque sed ullam excepturi perspiciatis odio, odit debitis corporis qui repellendus quasi doloremque labore quae deserunt velit saepe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam corrupti vero culpa veritatis accusantium eos exercitationem sequi eveniet aliquam, et voluptatibus? Atque dicta molestiae tempore expedita recusandae, optio temporibus explicabo. .</p>
+        </div>
+        <div id="stationary" class="item" >
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus velit facere iusto cumque aut nam atque doloribus! Porro mollitia, rerum similique quis hic fugiat eaque dolorum sapiente suscipit nesciunt perspiciatis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod fugit mollitia ea, cupiditate porro ipsam tenetur reprehenderit minus velit maiores aperiam iusto sint similique vel exercitationem quam eligendi ducimus adipisci! </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form1</title>
+  </head>
+
+  <body>
+    <h2>This is Sample Form</h2>
+    <hr />
+    <form action="backend.php">
+      <!-- we use div tag rather than br because it use less space(block inline element) -->
+      <label for="name">NAME:</label>
+      <!-- whenever click on name curser come in checkbox -->
+      <div>
+        <input type="text" name="myname" id="name" />
+      </div>
+      <br />
+      <!-- we should avoid br and is css (margen and padding) -->
+      <div>role:: <input type="text" name="myrole" /></div>
+      <br />
+      <div>Email: <input type="email" name="myemail" /></div>
+      <br />
+      <div>Date: <input type="date" name="mydate" /></div>
+      <br />
+      <div>my bonus <input type="number" name="mybonus" id="" /></div>
+      <br />
+      <div>
+        <label for="are"> are you eligible? </label>
+
+        <input type="checkbox" name="myeligibility" id="are" />
+        <br />
+        are you eligible?:
+        <input type="checkbox" name="myeligibility" id="" checked />
+      </div>
+      <br />
+      <div>
+        gender: male <input type="radio" name="mygender" id="" /> female
+        <input type="radio" name="mygender" id="" /> other
+        <input type="radio" name="mygender" id="" />
+        <hr />
+        gender: male <input type="radio" name="mygeder" id="" /> female
+        <input type="radio" name="myr" id="" /> other
+        <input type="radio" name="myder" id="" />
+      </div>
+      <br />
+      <div>
+        write something: <br /><textarea
+          name="mytext"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="car">car:</label>
+        <select name="mycsr" id="car">
+          <option value="indica">Insica</option>
+          <option value="swf" selected>swift</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+  </body>
+</html>
