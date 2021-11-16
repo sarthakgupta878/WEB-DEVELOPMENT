@@ -55,7 +55,7 @@ function showNotes(){
         notesElm.innerHTML = `Nothing to show! Use "Add a Note" section above to add notes.`;
     }
 }
-// function to selete a note
+// function to delete a note
 function deleteNote(index) {
     // console.log('i am deleating',index)
     let notes = localStorage.getItem("notes")
