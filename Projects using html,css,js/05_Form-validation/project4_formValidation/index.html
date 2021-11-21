@@ -14,8 +14,14 @@
 </head>
 
 <body>
-    <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
+    <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
         <strong>Success</strong> Your travel request has been succrssfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade " role="alert">
+        <strong>Success</strong> Your travel request has not been sent due to error
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -26,13 +32,15 @@
 
         <form>
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                <label for="name">Username</label>
+                <input type="text" class="form-control " id="name" placeholder="Enter Your Name">
+                <small id="passwordHelpBlock" class="form-text text-muted">Your username must be 2-10 characters long and should not start with a number</small>
             </div>
 
             <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+                <small id="emailvalid" class="form-text text-muted">Your Email must be valid</small>
             </div>
 
             <div class="form-group">
@@ -53,6 +61,7 @@
             <div class="form-group">
                 <label for="phone">Enter your phone number</label>
                 <input class="form-control" name="phone" id="phone" rows="3"></input>
+                <small id="phonevalid" class="form-text text-muted">Your phone number must be 10 digit long</small>
 
             </div>
 
@@ -61,7 +70,7 @@
                 <label for="exampleFormControlTextarea1">Any other message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button id="submit" class="btn btn-primary">Submit</button>
         </form>
 
     </div>
