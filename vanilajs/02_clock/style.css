@@ -1,0 +1,38 @@
+*{
+    /* background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5); */
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    display: flex;
+    flex: 1;
+}
+.clock{
+    width: 450px;
+    height: 430px;
+    background-color: pink;
+    border: 20px solid black;
+    margin: 100px auto;
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+.hand{
+    position: absolute;
+    background-color: black;
+    width: 2px;
+    height: 40%;
+    margin-left: 48%;
+    transform-origin: 100%;
+
+
+
+}
