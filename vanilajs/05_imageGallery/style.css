@@ -10,14 +10,14 @@
 .panels{
     display: flex;
     min-height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 
 .panel{
     background: chartreuse;
     /* box-shadow: ; */
-    color: pink;
+    color: red;
     /* text-align: center; */
     align-items: center;
     transition: 
@@ -35,6 +35,15 @@
 
 
 
+}
+
+.panel > *{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
 }
 
 .panel > *:first-child{
