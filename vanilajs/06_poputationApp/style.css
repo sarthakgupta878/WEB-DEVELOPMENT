@@ -42,9 +42,11 @@ input.search{
     border-bottom: 2px solid black;
     padding: 20px;
     transition: background 0.2s;
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     text-transform: capitalize;
 
 }
-
+.h1{
+    background: palevioletred;
+}
