@@ -7,47 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hold Shift to Check Multiple Checkboxes</title>
     <style>
+        html {
+            margin: 0px;
+            padding: 0px;
+            background: yellow;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
-html{
-    margin: 0px;
-    padding: 0px;
-    background: yellow;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+        .inbox {
+            max-width: 400px;
+            background: white;
+            margin: 50px auto;
+            border-radius: 5px;
 
-.inbox{
-    max-width: 400px;
-    background: white;
-    margin: 50px auto;
-    border-radius: 5px;
+        }
 
-}
-.item{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-.item:last-child {
-      border-bottom: 0;
-    }
+        .item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
 
-    input:checked + p{
-        /* background:grey ; */
-        text-decoration: line-through;
-    }
+        .item:last-child {
+            border-bottom: 0;
+        }
 
-    input[type="checkbox"] {
-      margin: 20px;
-    }
+        input:checked+p {
+            /* background:grey ; */
+            text-decoration: line-through;
+        }
 
-    p{
-        padding: 20px;
-        flex: 1;
-        transition: background 0.2s;
-        font-weight: 200;
-        border-left: 1px solid #D1E2FF;
-    }
+        input[type="checkbox"] {
+            margin: 20px;
+        }
 
+        p {
+            padding: 20px;
+            flex: 1;
+            transition: background 0.2s;
+            font-weight: 200;
+            border-left: 1px solid #D1E2FF;
+        }
     </style>
 </head>
 
@@ -90,6 +90,31 @@ html{
             <p>Don't forget to tweet your result!</p>
         </div>
     </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.inbox input[type = "checkbox"]');
+
+        let lastChecked;
+
+        function handleCheck(e) {
+            let inBetween = false;
+            if (e.shiftKey && this.checked) {
+                checkboxes.forEach(checkbox => {
+                    if (checkbox === this || checkbox === lastChecked) {
+                        inBetween = !inBetween;
+                    }
+                    if (inBetween) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+            lastChecked = this;
+        }
+
+
+
+        checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+    </script>
 </body>
 
 </html>
