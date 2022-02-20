@@ -1,0 +1,40 @@
+body{
+    background-color: blueviolet;
+}
+
+.container{
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+table{
+    margin: 10px auto;
+}
+
+input{
+    font-size: 30px;
+    border: 4px solid black;
+    border-radius: 25px;
+ 
+
+}
+
+button{
+    font-size: 38px;
+    background-color: aqua;
+    width: 90px;
+    height: 50px;
+    border-radius: 20px;
+
+}
+.calculator{
+    /* border: 2px solid black; */
+    background-color: palevioletred;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 25px;
+    border: 4px solid black;
+
+
+}
