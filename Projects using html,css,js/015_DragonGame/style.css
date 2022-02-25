@@ -43,8 +43,26 @@ body{
 .obstacleAni{
     animation: obstacleAni 5s linear infinite;
 }
+
+#scoreCont{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    width:120px;
+    padding: 3px;
+    border-radius: 4px;
+}
 .gameOver{
-    visibility: hidden;
+  
+    position: relative;
+    top: 63px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+
+
 }
 
 @keyframes dino{
