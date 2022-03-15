@@ -12,6 +12,24 @@
     align-items: center;
     
 }
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#hiscoreBox{
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
 
 #board{
     background: linear-gradient(rgb(208, 255, 208),rgb(236, 223, 236));
@@ -25,13 +43,23 @@
 }
 
 .head{
-    background-color: red;
+    /* background-color: red; */
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 8px;
+
 }
 .snake{
-    background-color: purple;
+    background:linear-gradient(blue,red);
+    border: .25vin solid rgb(241, 237, 237);
+    border-radius: 12px;
 }
 
+
 .food{
-    background-color: yellow;
+    background: linear-gradient(red,purple);
+    border:  .25vmin solid black;
+    border-radius: 8px;
     
 }
