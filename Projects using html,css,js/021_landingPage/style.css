@@ -18,6 +18,7 @@
 }
 .topleft{
     width: 50%;
+    margin-bottom: 100px;
     /* height: 50vh; */
 }
 
@@ -41,4 +42,35 @@ section{
 }
 .gymimg{
     width: 300px;
+}
+
+.section2 p{
+    padding: 0px 150px;
+}
+
+.section2 h1{
+    font-size: 3rem;
+}
+
+.box{
+    margin: 10px 20px;
+    min-width: 23vw;
+    border: 2px solid rgb(155, 95, 5);
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+.box ul{
+    list-style: none;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0px;
+}
+.box ul li{
+    margin: 12px 2px;
+}
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
