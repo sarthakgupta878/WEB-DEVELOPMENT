@@ -24,6 +24,9 @@
     margin-bottom: 100px;
     /* height: 50vh; */
 }
+.topleft h1 {
+  color: rgb(198, 68, 17);
+}
 
 .topright {
     width: 50%;
@@ -38,6 +41,7 @@ section {
 
 .section1 {
     max-height: 100vh;
+    color: rgb(240, 146, 58);
 }
 
 .logo {
@@ -114,4 +118,21 @@ section {
 .section3 table td {
      border-bottom: 2px solid black;
 
+}
+footer{
+    padding: 20px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.deal{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 12px 0px;
+    color: rgb(190, 15, 15);
 }

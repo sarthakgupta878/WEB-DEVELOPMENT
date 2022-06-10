@@ -61,6 +61,7 @@
     background-color: rgb(226 73 55) ;
     border-radius: 10px;
     cursor: pointer;
+    margin: 2px;
 }
 .overflow-x-hidden{
     overflow-x: hidden;
