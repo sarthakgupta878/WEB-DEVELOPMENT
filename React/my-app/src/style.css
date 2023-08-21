@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 5, 83);
+    padding: 20px;
+    
+}
+main{
+    color: red;
+    height: 80vh;
+    /* width: 75vw; */
+    max-width: 800px;
+    background-color: #fff;
+    margin: 6vh auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.dice--container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5,1fr);
+    place-items: center;
+    gap: 50px;
+   
+}
+.die--face{
+    height: 70px;
+    width: 70px;
+   box-shadow: 0px 2px 2px #c5c3c3;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    cursor: pointer;
+}
+.btn{
+    color: blue;
+    height: 60px;
+    width: 100px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-size:medium;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
