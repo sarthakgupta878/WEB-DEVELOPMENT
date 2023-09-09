@@ -222,3 +222,124 @@ ul {
   columns: var(--red-dark);
   transform: translateY(-2px);
 }
+
+.search-container{
+  height: 5rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container form{
+  width: var(--view-width);
+  max-width: var(--max-width);
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+
+}
+.form-input{
+  max-width: 200px;
+  padding: 0.3rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+}
+::placeholder{
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.btn{
+  font-size: 0.75rem;
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  z-index: 10;
+}
+
+.modal-container{
+  width: 80vw;
+  max-width: 800px;
+  height: 80vh;
+  overflow: scroll;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+}
+
+.modal-img{
+  height: 15rem;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.modal-content{
+  padding: 1.3rem;
+}
+
+.modal-content a{
+  display: block;
+  color: var(--primary-500);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.modal-content a:hover{
+  color: var(--black);
+}
+
+.modal-content p{
+  color: var(--grey-600);
+}
+
+.close-btn{
+  background: var(--red-dark);
+  color: white;
+}
+.favorites{
+  padding: 1rem;
+  background: var(--black);
+  color: var(--white);
+}
+.favorites-content{
+  width: var(--view-width);
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.favorites-container{
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.favorite-item{
+  text-align: center;
+}
+.favorites-img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  cursor: pointer;
+}
+.remove-btn{
+  margin-top: 0.2rem;
+  background: transparent;
+  color: var(--white);
+  border: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+  font-size: 0.5rem;
+}
+.remove-btn:hover{
+  color: var(--red-dark);
+}

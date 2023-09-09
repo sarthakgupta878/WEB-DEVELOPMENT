@@ -3,14 +3,19 @@ import Search from './components/Search'
 import Modal from './components/Modal'
 import Meals from './components/Meals'
 import Favorites from './components/Favorites'
+import { AppContext } from './context'
 
 const App = () => {
+
+  const context = React.useContext(AppContext)
+  const {showModal, favorites} = context
+
   return (
     <div>
-      {/* <Search/> */}
+      <Search/>
+      { favorites.length >0 && <Favorites/> }
       <Meals/>
-      {/* <Favorites/> */}
-      {/* <Modal/> */}
+      { showModal && <Modal/>}
     </div>
   )
 }
